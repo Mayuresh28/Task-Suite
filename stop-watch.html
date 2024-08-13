@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .value{
+          
+            font-size: 150px;
+            font-weight: bold;
+            color: #2b2d42;
+          margin: 20px;
+
+        }
+        .text{
+          
+            font-size: 40px;
+            font-weight: bold;
+            color: #2b2d42;
+          margin: 10px;
+        }
+        .btn{
+          
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+            margin: 30px;
+         
+        }
+        #start{
+       
+          background-color:  rgb(3, 128, 3);
+          color: whitesmoke;
+        }
+        #stop{
+         
+          background-color:#d90429;
+          color: whitesmoke;
+        }
+        #reset{
+       
+          background-color:rgb(3, 117, 117);
+          color: whitesmoke;
+        }
+        .navbar {
+        background-color: #2b2d42;
+        padding: 20px;
+        text-align: center;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo {
+        color: #edf2f4;
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      body {
+        background-color: #edf2f4;
+        color: #2b2d42;
+      }
+
+      #home-link{
+        text-decoration: none;
+        color: whitesmoke;
+      }
+      #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+      }
+
+      #btn_cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        position: absolute;
+        top: 400px;
+        left: 600px;
+      }
+    </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><a href="/integrated.html" id="home-link">TaskSuite</a></div>
+  </nav>
+    <div id="container">
+        <span class="value" id="hrv">00</span>
+        <span class="text" id="hr">Hr</span> 
+        <span class="value" id="minv">00</span>
+        <span class="text" id="min">Min</span>
+        <span class="value" id="secv">00</span>
+        <span class="text" id="sec">Sec</span>
+       <span class="value" id="countv">00</span>
+    </div>
+    <div id="btn_cont">
+        <button class="btn" id="start" onclick="start()">Start</button>
+        <button class="btn" id="stop" onclick="stop()">Stop</button>
+        <button class="btn" id="reset" onclick="reset()">Reset</button>
+    
+
+    </div>
+
+    <script src="/stop-watch.js">
+      
+    </script>
+</body>
+</html>

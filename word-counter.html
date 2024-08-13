@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter</title>
+    <style>
+      h1 {
+        padding: 20px;
+        background-color: #d90429;
+        color: whitesmoke;
+        font-size: 2rem;
+        width: 30vw;
+        margin:50px;
+      }
+      #wc {
+        padding: 20px;
+        background-color: #169495;
+
+        color: whitesmoke;
+        font-size: 2.5rem;
+        margin: 40px;
+        width: 30vw;
+        font-weight: 700;
+      }
+      #textbox {
+        border: 4px solid black;
+        font-size: 25px;
+        height: 40vh;
+        width: 55vw;
+      }
+
+      .navbar {
+        background-color: #2b2d42;
+        padding: 20px;
+        text-align: center;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo {
+        color: #edf2f4;
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      body {
+        background-color: #edf2f4;
+        color: #2b2d42;
+      }
+
+      #home-link{
+        text-decoration: none;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo"><a href="/integrated.html" id="home-link">TaskSuite</a></div>
+    </nav>
+
+    <center>
+      <h1>Word And Character Counter</h1>
+      <div id="container">
+        <textarea id="textbox"></textarea>
+      </div>
+      <div id="wc">
+        <span id="word">0</span> Words &
+        <span id="character">0</span> Characters
+      </div>
+    </center>
+    <script src="/word-counter.js"></script>
+  </body>
+</html>
